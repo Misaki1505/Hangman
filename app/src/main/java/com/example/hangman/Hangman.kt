@@ -17,7 +17,19 @@ fun setupGame() {
     words[wordIndex].toUpperCase().also { word = it }
     println(word)
 
-    printOMistakes()
+    printGameStatus()
+}
+
+fun printGameStatus() {
+    when(mistakes) {
+        0 -> printOMistakes()
+        1 -> print1Mistake()
+        2 -> print2Mistakes()
+        3 -> print3Mistakes()
+        4 -> print4Mistakes()
+        5 -> print5Mistakes()
+        6 -> print6Misatkes()
+    }
 }
 
 fun printOMistakes() {
@@ -26,6 +38,72 @@ fun printOMistakes() {
     println("   |            ")
     println("   |            ")
     println("   |            ")
+    println("   |            ")
+    println("  /|\\          ")
+    println(" / | \\         ")
+}
+
+fun print1Mistake() {
+    println("   |---------|--")
+    println("   |         |  ")
+    println("   |         O  ")
+    println("   |            ")
+    println("   |            ")
+    println("   |            ")
+    println("  /|\\          ")
+    println(" / | \\         ")
+}
+
+fun print2Mistakes() {
+    println("   |---------|--")
+    println("   |         |  ")
+    println("   |         O  ")
+    println("   |         |  ")
+    println("   |            ")
+    println("   |            ")
+    println("  /|\\          ")
+    println(" / | \\         ")
+}
+
+fun print3Mistakes() {
+    println("   |---------|--")
+    println("   |         |  ")
+    println("   |         O  ")
+    println("   |        /|  ")
+    println("   |            ")
+    println("   |            ")
+    println("  /|\\          ")
+    println(" / | \\         ")
+}
+
+fun print4Mistakes() {
+    println("   |---------|--")
+    println("   |         |  ")
+    println("   |         O  ")
+    println("   |        /|\\ ")
+    println("   |            ")
+    println("   |            ")
+    println("  /|\\          ")
+    println(" / | \\         ")
+}
+
+fun print5Mistakes() {
+    println("   |---------|--")
+    println("   |         |  ")
+    println("   |         O  ")
+    println("   |        /|\\ ")
+    println("   |        /   ")
+    println("   |            ")
+    println("  /|\\          ")
+    println(" / | \\         ")
+}
+
+fun print6Misatkes(){
+    println("   |---------|--")
+    println("   |         |  ")
+    println("   |         O  ")
+    println("   |        /|\\ ")
+    println("   |        / \\ ")
     println("   |            ")
     println("  /|\\          ")
     println(" / | \\         ")
