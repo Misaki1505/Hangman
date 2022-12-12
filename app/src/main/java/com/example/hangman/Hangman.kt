@@ -47,6 +47,13 @@ fun setupGame() {
             }
         }
     }while (!gameOver)
+     if(mistakes == 6) {
+         printGameStatus()
+         println("Sorry, you lost. The word was \n$word")
+     } else {
+         println("\nCongratultions, you win!")
+         println("The word mas \n$word")
+     }
 }
 
 fun printGameStatus() {
